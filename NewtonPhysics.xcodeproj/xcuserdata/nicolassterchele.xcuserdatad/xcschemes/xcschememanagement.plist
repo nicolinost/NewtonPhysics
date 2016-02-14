@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NewtonPhysicsTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>EB565C011C24A41400046A3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EBD29A4E1C6F382E00BB09E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

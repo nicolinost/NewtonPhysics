@@ -11,7 +11,7 @@ import Foundation
 //The energy stored by an object in movement is named "Cinetic Energy".
 // Ec = 1/2 m (C ^ 2)
 
-class Cinetic: Energy {
+public class Kinetic: Energy {
     
     //Result as Joules
     var joules : Double = 0.0;
@@ -19,12 +19,16 @@ class Cinetic: Energy {
     //Mass as kg
     var m : Double = 0.0;
     //Speed as m*s^-1
-    var C : Double = 0.0;
+    var V : Double = 0.0;
     
-    
+    init( masse:Double, speed: Double){
+        self.m = masse;
+        self.V = speed;
+        
+    }
     
     func calCulate() -> Double {
-        joules = (1.0/2.0)*m * pow(C, 2.0);
+        joules = (1.0/2.0)*m * pow(V, 2.0);
         
         return joules;
     }

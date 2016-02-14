@@ -11,7 +11,20 @@
 		EB565C0F1C24A43D00046A3C /* IEnergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB565C0E1C24A43D00046A3C /* IEnergy.swift */; };
 		EB565C111C24A64200046A3C /* Cinetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB565C101C24A64200046A3C /* Cinetic.swift */; };
 		EB565C131C24A7EF00046A3C /* IFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB565C121C24A7EF00046A3C /* IFormula.swift */; };
+		EBD29A521C6F382E00BB09E0 /* NewtonPhysicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD29A511C6F382E00BB09E0 /* NewtonPhysicsTests.swift */; };
+		EBD29A541C6F382E00BB09E0 /* NewtonPhysics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB565C021C24A41400046A3C /* NewtonPhysics.framework */; };
+		EBD29A5B1C6F391100BB09E0 /* CineticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD29A5A1C6F391100BB09E0 /* CineticTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBD29A551C6F382E00BB09E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB565BF91C24A41400046A3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB565C011C24A41400046A3C;
+			remoteInfo = NewtonPhysics;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EB565C021C24A41400046A3C /* NewtonPhysics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewtonPhysics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +33,10 @@
 		EB565C0E1C24A43D00046A3C /* IEnergy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnergy.swift; sourceTree = "<group>"; };
 		EB565C101C24A64200046A3C /* Cinetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cinetic.swift; sourceTree = "<group>"; };
 		EB565C121C24A7EF00046A3C /* IFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFormula.swift; sourceTree = "<group>"; };
+		EBD29A4F1C6F382E00BB09E0 /* NewtonPhysicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewtonPhysicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD29A511C6F382E00BB09E0 /* NewtonPhysicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtonPhysicsTests.swift; sourceTree = "<group>"; };
+		EBD29A531C6F382E00BB09E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD29A5A1C6F391100BB09E0 /* CineticTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CineticTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +47,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBD29A4C1C6F382E00BB09E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD29A541C6F382E00BB09E0 /* NewtonPhysics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				EB565C041C24A41400046A3C /* NewtonPhysics */,
+				EBD29A501C6F382E00BB09E0 /* NewtonPhysicsTests */,
 				EB565C031C24A41400046A3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EB565C021C24A41400046A3C /* NewtonPhysics.framework */,
+				EBD29A4F1C6F382E00BB09E0 /* NewtonPhysicsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +94,16 @@
 				EB565C101C24A64200046A3C /* Cinetic.swift */,
 			);
 			name = Energy;
+			sourceTree = "<group>";
+		};
+		EBD29A501C6F382E00BB09E0 /* NewtonPhysicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBD29A511C6F382E00BB09E0 /* NewtonPhysicsTests.swift */,
+				EBD29A531C6F382E00BB09E0 /* Info.plist */,
+				EBD29A5A1C6F391100BB09E0 /* CineticTests.swift */,
+			);
+			path = NewtonPhysicsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,16 +138,38 @@
 			productReference = EB565C021C24A41400046A3C /* NewtonPhysics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EBD29A4E1C6F382E00BB09E0 /* NewtonPhysicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD29A571C6F382E00BB09E0 /* Build configuration list for PBXNativeTarget "NewtonPhysicsTests" */;
+			buildPhases = (
+				EBD29A4B1C6F382E00BB09E0 /* Sources */,
+				EBD29A4C1C6F382E00BB09E0 /* Frameworks */,
+				EBD29A4D1C6F382E00BB09E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD29A561C6F382E00BB09E0 /* PBXTargetDependency */,
+			);
+			name = NewtonPhysicsTests;
+			productName = NewtonPhysicsTests;
+			productReference = EBD29A4F1C6F382E00BB09E0 /* NewtonPhysicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EB565BF91C24A41400046A3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = GlobalMaths;
 				TargetAttributes = {
 					EB565C011C24A41400046A3C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EBD29A4E1C6F382E00BB09E0 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -128,12 +187,20 @@
 			projectRoot = "";
 			targets = (
 				EB565C011C24A41400046A3C /* NewtonPhysics */,
+				EBD29A4E1C6F382E00BB09E0 /* NewtonPhysicsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EB565C001C24A41400046A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD29A4D1C6F382E00BB09E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -153,7 +220,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBD29A4B1C6F382E00BB09E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD29A521C6F382E00BB09E0 /* NewtonPhysicsTests.swift in Sources */,
+				EBD29A5B1C6F391100BB09E0 /* CineticTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBD29A561C6F382E00BB09E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB565C011C24A41400046A3C /* NewtonPhysics */;
+			targetProxy = EBD29A551C6F382E00BB09E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EB565C081C24A41400046A3C /* Debug */ = {
@@ -281,6 +365,28 @@
 			};
 			name = Release;
 		};
+		EBD29A581C6F382E00BB09E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NewtonPhysicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TS.NewtonPhysicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBD29A591C6F382E00BB09E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NewtonPhysicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TS.NewtonPhysicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +404,15 @@
 			buildConfigurations = (
 				EB565C0B1C24A41400046A3C /* Debug */,
 				EB565C0C1C24A41400046A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD29A571C6F382E00BB09E0 /* Build configuration list for PBXNativeTarget "NewtonPhysicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD29A581C6F382E00BB09E0 /* Debug */,
+				EBD29A591C6F382E00BB09E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
